@@ -78,7 +78,7 @@ Los siguientes endpoints fueron configurados en MockAPI para interactuar con los
 
 ---
 
-##autor
+## Autor
 Desarrollado por Camila Perdomo
 
    
