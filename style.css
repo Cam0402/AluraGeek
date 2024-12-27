@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('assets/descarga\ \(3\).jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    font-family: 'Shantell Sans',sans-serif;
+}
+
+img {
+    min-width:200px;
+    height: 200px;
+
+}
+
+/*---------------------HEADER----------------------------*/
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #f4f4f4f4;
+    height: 80px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Rubik Glitch', sans-serif;
+}
+
+.header.titulo {
+    background-color: black;
+}
+
+/*---------------------CONTENEDOR----------------------------*/
+
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+    margin: 2rem;
+}
+
+.mainContainer > section  {
+    width: calc(100%/2);
+    min-height: calc(80vh);
+}
+
+/*---------------------SECTION PRODUCTOS----------------------------*/
+
+.productos,h1{
+    color: #f4f4f4f4;
+    -webkit-text-stroke: 2px black;
+    font-size: 40px;
+    justify-items: center;
+}
+
+
+
+
+
+/*---------------------SECTION AGREGAR PRODUCTOS----------------------------*/
+
+.agregarProductos{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 30px;
+    padding: 40px;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.027);
+}
+
+
+.agregarProductos h1 {
+    margin-bottom: 40px;
+    color: #f4f4f4f4;
+    -webkit-text-stroke: 2px black;
+    font-size: 40px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    padding: 20px;
+    font-weight: 600;
+    border: 3px solid #050505;
+    font-family: 'Shantell Sans',sans-serif;
+
+}
+
+/*---------------------FORMULARIO----------------------------*/
+
+.form-contenedor {
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#button {
+    border-radius: 15px;
+    height: 45px;
+    min-width: 130px;
+    font-family: 'Shantell Sans',sans-serif;
+}
+
+.boton-container{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.boton-submit {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c4b423ea;
+}
+
+/*---------------------FOOTER----------------------------*/
+
+footer {
+    position: relative;
+    background-color: #000;
+    color: #fff; 
+    text-align: center; 
+    padding: 20px 0; 
+    width: 100%; 
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    font-size: 20px;
+}
+
+/*---------------------CARDS----------------------------*/
+
+.products-container {
+   max-height: 70vh; 
+   overflow-x: auto; 
+   overflow-y: hidden;
+   scroll-snap-type: x mandatory;
+   gap: 10px;
+   padding: 2rem;
+   display: flex;
+   gap: 1rem;
+   width:100%;
+}
+
+.products-container::-webkit-scrollbar {
+    height: 8px;
+}
+  
+.products-container::-webkit-scrollbar-thumb {
+    background: #c5c3c385; 
+    border-radius: 4px;
+}
+  
+.products-container::-webkit-scrollbar-track {
+    background: #f1f1f107;
+}
+
+.card {
+    background-color: #d4d4d493;
+    color:#000000;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #000000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.card-container-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family:'Shantell Sans',sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.card-container-value{
+    display:flex;
+    min-width:100%;
+    justify-content:space-between;
+    font-size: 20px;
+}
+
+.delete-button{
+    border: none;
+    background-color: #00000000;
+}
+
+.delete-button img{
+    min-width: 10px;
+    height: 20px;
+}
+
+/*---------------------pantallas pequeñas----------------------------*/
+
+@media screen and (max-width: 768px){
+    .mainContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainContainer > section {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .form-contenedor {
+        padding: 2rem;
+    }
+
+    .card {
+        width: calc(100% - 20px);
+        margin-bottom: 15px;
+    }
+
+    .boton-container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer {
+        position: relative;
+        font-size: 12px;
+    }
+
+}

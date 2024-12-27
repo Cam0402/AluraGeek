@@ -1,0 +1,58 @@
+{
+    "products": [
+    {
+      "name": "Bill Cipher",
+      "price": "30",
+      "image": "https://i.pinimg.com/736x/81/30/04/813004cb3f942cdc25d56f6b3b3fd798.jpg",
+      "id": 1
+    },
+    {
+      "name": "Harry Potter",
+      "price": "60",
+      "image": "https://i.pinimg.com/736x/0e/ab/a9/0eaba91f29bce85bd9fbc9e6c990730d.jpg",
+      "id": 2
+    },
+    {
+      "name": "Gnomo",
+      "price": "30",
+      "image": "https://i.pinimg.com/736x/cf/88/23/cf8823ce63ac1f26eafedb36cbf2aea4.jpg",
+      "id": 3
+    },
+    {
+      "name": "Stitch",
+      "price": "70",
+      "image": "https://i.pinimg.com/736x/33/88/35/33883532aa6e68fe922a106a95f70a4d.jpg",
+      "id": 4
+    },
+    {
+      "name": "Mario",
+      "price": "80",
+      "image": "https://i.pinimg.com/736x/ec/58/ef/ec58ef021478be82d081248f9813f430.jpg",
+      "id": 5
+    },
+    {
+      "name": "Personajes Marvel",
+      "price": "100",
+      "image": "https://i.pinimg.com/736x/63/80/34/638034b3fb2479addb6313cc12a1c144.jpg",
+      "id": 6
+    },
+    {
+      "name": "Totoro",
+      "price": "35",
+      "image": "https://i.pinimg.com/736x/25/7e/0c/257e0cd9b40a6ec0f75913f17952120c.jpg",
+      "id": 7
+    },
+    {
+      "name": "El perro Coraje",
+      "price": "40",
+      "image": "https://i.pinimg.com/736x/66/7f/6a/667f6a73d41eb54602cab9d1aefadc23.jpg",
+      "id": 8
+    },
+    {
+      "name": "Familia Kuromi",
+      "price": "100",
+      "image": "https://i.pinimg.com/736x/fb/66/5e/fb665e4fbfabb99befde43ce1548cc4e.jpg",
+      "id": 9
+    }
+  ]
+}

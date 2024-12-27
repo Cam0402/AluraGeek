@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <header class="header">
+        <h1 class="titulo">PineToon</h1>
+    </header>
+
+    <!--Contenedor principal-->
+    <main class="mainContainer">
+        <section class="productos">
+            <h1>Mis productos:</h1>
+            <div data-product class="products-container">
+                <!--
+                <div class="img-container">
+                    <img src="assets/descarga (4).jpeg" alt="imagen producto">
+                </div>
+                <div class="card-container-info">
+                    <p>Bill Cipher (Gravity Falls)</p>
+                    <div class="card-container-value">
+                        <p>$18</p>
+                        <button class="delete-button" data-id="${id}">
+                            <img src="assets/icons8-basura-50.png" alt="Eliminar">
+                        </button>
+                    </div>
+                </div>
+                -->
+            </div>
+        </section>
+
+        <!---Agregar productos-->
+        <section class="agregarProductos">
+            <h1>Agregar <br> productos:</h1>
+        
+
+            <form class="form-contenedor" data-form>
+                <input data-name placeholder="Nombre..." type="text">
+                <input data-price placeholder="Precio..." type="text">
+                <input data-image placeholder="Imagen..." type="text">
+                <span data-mensaje class="mensajeError"></span>
+                <div class="boton-container">
+                    <button type="submit" class="boton-submit" id="button">Enviar</button>
+                    <button type="reset" class="boton-reset" id="button">Limpiar</button>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <p>Desarrollado por Camila Perdomo ©</p>
+            <small>Alura Latam 2024</small>
+        </div>
+    </footer>
+    <script type="module" src="js/services/controllers/main.js"></script>
+</body> 
+</html>
